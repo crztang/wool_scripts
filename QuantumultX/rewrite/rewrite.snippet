@@ -807,12 +807,6 @@ http:\/\/ad\.myfriday\.cn\/d\/json\/1\.1 url reject
 ^https?:\/\/ump\.ems\.com\.cn\/mailAd$ url reject
 ^https?:\/\/ump\.ems\.com\.cn\/new-generation-extend\/redis\/pageInfoByChannel url script-response-body https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/wechatApplet.js
 
-# >>>>>>>>>>>>>>> ✅ F ✅ <<<<<<<<<<<<<<
-# > Flightradar24
-# hostname = mobile.flightradar24.com
-# 解锁
-^https?:\/\/mobile\.flightradar24\.com\/mobile\/(user-session|subscribe) url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/scripts/Flightradar24.js
-
 # > 飞猪 + 阿里巴巴
 # hostname = acs.m.taobao.com, gw.alicdn.com
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.fliggy\.crm\.screen\.(allresource|predict) url reject-dict
